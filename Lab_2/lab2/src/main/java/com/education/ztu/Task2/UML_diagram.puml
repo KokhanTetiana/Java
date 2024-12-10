@@ -1,0 +1,101 @@
+@startuml
+
+' Основні класи
+class Car {
+    - String brand
+    - Engine engine
+    + Car(String brand)
+    + Engine getEngine()
+    + String getBrand()
+    + boolean engineIsRunning()
+}
+
+class Engine {
+    - boolean engineWorks
+    + void startEngine()
+    + void stopEngine()
+    + boolean isEngineWorks()
+}
+
+class Person {
+    - String firstname
+    - String lastname
+    - int age
+    - Gender gender
+    - Location location
+    - String fullInfo
+    - static int counter
+    + Person(String firstname, String lastname, int age, Gender gender, Location location)
+    + abstract void getOccupation()
+    + void sayName()
+    + void sayAge()
+    + void sayLocation()
+    + void sayGender()
+    + String getFullInfo()
+    + static void showCounter()
+}
+
+class Student {
+    - String course
+    - String speciality
+    - String university
+    - static int counter
+    + Student(String firstname, String lastname, int age, Gender gender, Location location, String course, String speciality, String university)
+    + void getOccupation()
+    + static void showCounter()
+    + String getCourse()
+    + void setCourse(String course)
+    + String getSpeciality()
+    + void setSpeciality(String speciality)
+    + String getUniversity()
+    + void setUniversity(String university)
+}
+
+class Employee {
+    - String position
+    - String company
+    - Car car
+    - static int counter
+    + Employee(String firstname, String lastname, int age, Gender gender, Location location, String position, String company, Car car)
+    + void getOccupation()
+    + static void showCounter()
+    + String getCompany()
+    + void setCompany(String company)
+    + String getPosition()
+    + void setPosition(String position)
+    + Car getCar()
+    + void setCar(Car car)
+}
+
+class Teacher {
+    - String subject
+    - String university
+    - Car car
+    - static int counter
+    + Teacher(String firstname, String lastname, int age, Gender gender, Location location, String subject, String university, Car car)
+    + void getOccupation()
+    + static void showCounter()
+    + String getSubject()
+    + void setSubject(String subject)
+    + String getUniversity()
+    + void setUniversity(String university)
+    + Car getCar()
+    + void setCar(Car car)
+}
+
+
+enum Gender {
+    MALE, FEMALE
+}
+
+enum Location {
+    KIEV, ZHYTOMYR, VINNYTSYA, RIVNE
+}
+
+' Зв'язки між класами
+Person <|-- Student
+Person <|-- Employee
+Person <|-- Teacher
+Car o-- Engine
+
+@enduml

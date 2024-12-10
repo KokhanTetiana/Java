@@ -1,0 +1,28 @@
+@startuml
+
+' Клас для перерахунку Location
+enum Location {
+    KIEV, ZHYTOMYR, RIVNE, LVIV
+}
+
+' Клас для математичних операцій
+class Operation {
+    + static int addition(int... numbers)
+    + static int subtraction(int... numbers)
+    + static int multiplication(int... numbers)
+    + static double division(double... numbers)
+    + static double average(int... numbers)
+    + static int maximum(int... numbers)
+    + static int minimum(int... numbers)
+}
+
+' Клас Main2, який використовує класи Operation та Location
+class Main2 {
+    + static void main(String[] args)
+}
+
+' Зв'язки між класами
+Main2 ..> Operation : Uses
+Main2 ..> Location : Uses
+
+@enduml
