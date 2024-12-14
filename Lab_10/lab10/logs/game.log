@@ -1,0 +1,14 @@
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Teams created successfully!
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Teams are going to play against each other
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Teams serialized successfully!
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Deserialized teams:
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Team{name='Dragon', participants=null}
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Team{name='Vpered', participants=null}
+2024-12-14 22:14:19 INFO  com.education.ztu.game.Game - Team{name='Robotyagi', participants=null}
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Teams created successfully!
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Teams are going to play against each other
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Teams serialized successfully!
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Deserialized teams:
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Team{name='Dragon', participants=null}
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Team{name='Vpered', participants=null}
+2024-12-14 22:56:32 INFO  com.education.ztu.game.Game - Team{name='Robotyagi', participants=null}
